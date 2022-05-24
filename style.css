@@ -90,27 +90,34 @@ body {
 }
 
 .featured-movie {
+    display: flex;
     position: relative;
     text-align: center;
     margin: 40px 80px 0 80px;
 }
 
 .avengers {
+    display: flex;
     width: 100%;
-    height: 900px;
+    height: 100%;
     opacity: 0.8;
     box-shadow: rgb(57, 57, 221) 30px 30px 30px, rgb(57, 57, 221) -30px -30px 30px, rgb(57, 57, 221) 30px -30px 30px, rgb(57, 57, 221) -30px 30px 30px;
 }
 
 .lorem1 {
     position: absolute;
-    font-size: 25px;
+    font-size: 50%;
+    max-width: 50px;
     font-weight: bold;
     text-align: justify;
     color: white;
     bottom: 100px;
     left: 45px;
     right: 50%;
+}
+
+.lorem1 h1, .lorem1 p {
+    display: flex;
 }
 
 iframe:hover{ 
@@ -184,3 +191,51 @@ iframe:hover{
 .form2 button:hover {
     background-color: #f12933;
 }
+
+.bar {
+    display: none;
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.bar i {
+    margin-top: 20px;
+}
+
+.loginicon {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .logo2 {
+        display: none;
+    }
+    .bar {
+        display: inline-block;
+    }
+    .nav2 ul .li1 {
+        display: none;
+    }
+    .search, .search input, .search button {
+        position: absolute;
+        right: 0;
+        bottom: 53px;
+    }
+    .search input {
+        margin-right: 40px;
+    }
+    .nav1 ul li {
+        /* bottom: 45px;
+        width: 100px;
+        font-size: smaller; */
+        display: none;
+    }
+    .loginicon {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 15px;
+        font-size: 50px;
+    }
+}
+

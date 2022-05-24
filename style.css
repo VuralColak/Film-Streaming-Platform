@@ -222,6 +222,7 @@ iframe:hover{
         bottom: 53px;
     }
     .search input {
+        width: 150px;
         margin-right: 40px;
     }
     .nav1 ul li {
@@ -249,6 +250,24 @@ iframe:hover{
         transform: scale(0.6);
         width: 100%;
     }
+    .email input {
+        width: 320px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .email button {
+        width: 175px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .lorem1 {
+        font-size: 120%;
+        bottom: 70px;
+        left: 20px;
+    }
 }
 
 @media (max-width:900px) {
@@ -256,6 +275,14 @@ iframe:hover{
         font-size: 50%;
         bottom: 50px;
         left: 15px;
+    }
+}
+
+@media (max-width:450px) {
+    .lorem1 {
+        font-size: 25%;
+        bottom: 20px;
+        left: 5px;
     }
 }
 
